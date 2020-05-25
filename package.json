@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node server.js"
+    "postinstall": "ng build --aot --prod"
   },
   "dependencies": {
     "body-parser": "~1.18.2",
@@ -14,5 +15,9 @@
     "promise-mysql": "^3.2.1",
     "promised-mongo": "^1.2.0",
     "serve-favicon": "~2.4.5"
+  },
+  "engines": {
+    "node": "~12.16.3",
+    "npm":"~6.14.4"
   }
 }
